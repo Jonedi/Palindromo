@@ -3,5 +3,8 @@ function palindromo() {
     const newTxt = txt.replace(/[\W_]/g, "").toLowerCase();
     const txtReverse = newTxt.split("").reverse().join("");
 
-    document.getElementById("response").innerHTML = newTxt === txtReverse ? "El texto es palindromo" : "El texto no es palindromo"
+    const result = newTxt === txtReverse ? "El texto es palíndromo" : "El texto no es palíndromo";
+    var print = document.getElementById("response");
+
+    print.innerHTML = result
 }
